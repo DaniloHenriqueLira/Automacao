@@ -1,0 +1,14 @@
+// Configura TRCV_C para recepção de dados
+"TRCV_C_DB"(EN_R := #RCV.enable,
+            CONT := #RCV.contRcv,
+            LEN := 0,
+            ADHOC := "AlwaysTRUE",
+            DONE => #RCV.doneRcv,
+            BUSY => #RCV.busyRcv,
+            ERROR => #RCV.errorRcv,
+            STATUS => #RCV.statusRcv,
+            RCVD_LEN := #RCV.rcvdLen,
+            CONNECT := #RCV.connectRcv,
+            DATA := #DATA_RCV,
+            ADDR := NULL,
+            COM_RST := "AlwaysFALSE");
